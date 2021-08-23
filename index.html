@@ -115,9 +115,13 @@
           To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
           send you spam or pass on your email address
         </p>
-        <form class="footer__form" >
-          <input type="email" aria-label="undefined" id="user-email" value="" class="form__input" placeholder="example@email.com" required>
+        <form class="footer__form" id="form" >
+          <label>
+          <input  aria-label="undefined" id="user-email" value="" class="form__input"    min="1" max="20" placeholder="example@email.com" required>
+          <span class="error" aria-live="polite"></span>
+        </label>
           <input type="submit"  class="btn btn-subscribe">
+         
         </form>
       </div>
 
