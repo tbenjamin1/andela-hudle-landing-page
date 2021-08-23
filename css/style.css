@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -35,7 +39,7 @@ body {
 }
 
 .heading {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: inherit;
 }
@@ -175,6 +179,7 @@ body {
 
 .header {
   margin: 14rem 0 1rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,7 +229,7 @@ body {
   align-self: center;
 }
 .stat__icon {
-  fill: var(--color-primary-dark);
+  fill: hsl(192, 100%, 9%);
   height: 3.5rem;
 }
 
@@ -325,7 +330,8 @@ body {
   content: "";
   
   display: block;
-  
+  background-image: url("../images/bg-footer-top-desktop.svg");
+ 
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -334,7 +340,7 @@ body {
 }
 
 .footer__container {
-  background-color: hsl(193, 76%, 5%);
+  background-color: hsl(192, 100%, 9%);
   color: #f6fbff;
   /* border-radius: 10px 100px / 120px; */
   display: flex;
@@ -393,7 +399,9 @@ body {
 .footer__form {
   margin-top: 2rem;
   width: 100%;
+  color: #fff;
   display: flex;
+
   justify-content: space-between;
 }
 
@@ -426,7 +434,7 @@ input:focus:invalid {
 }
 
 /* This is the style of our error messages */
-.error {
+form span.error {
   width  : 100%;
   padding: 0;
 
@@ -437,6 +445,7 @@ input:focus:invalid {
 border: 1px solid red;
   box-sizing: border-box;
 }
+
 
 .error.active {
   padding: 0.3em;
